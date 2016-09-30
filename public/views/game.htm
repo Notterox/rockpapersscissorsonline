@@ -1,0 +1,45 @@
+<div ng-controller='GameCtrl'>
+	<div class="col-xs-12 text-center">
+		<h1>Игра до 5 побед</h1>
+	</div>
+	<div class="col-xs-12 text-center">
+		<h3>Раунд {{currentRound + 1}}</h3>
+	</div>
+	<div class="col-xs-12 text-center">
+		<h1>{{playerScore}} : {{opponentScore}}</h1>
+	</div>
+	<div class="col-xs-6">
+		<h2>Вы</h2>
+		<div class="col-xs-3">
+			<div class="move-btns">
+				<div class="row">
+				<a href="" ng-click="makeMove(0, $event)">
+					<img src="res/rock.svg" alt="" class="img-responsive move-img"></a>
+				</div>
+				<div class="row">
+					<a href="" ng-click="makeMove(1, $event)">
+						<img src="res/scissors.svg" alt="" class="img-responsive move-img">
+					</a>
+				</div>
+				<div class="row">
+					<a href="" ng-click="makeMove(2, $event)">
+						<img src="res/paper.svg" alt="" class="img-responsive move-img">
+					</a>
+				</div>
+			</div>			
+		</div>
+		<div class="col-xs-9">
+			<img id="playerMoveImg" src="res/empty.svg" alt="" class="img-responsive empty-img pull-right">
+		</div>
+		
+	</div>
+	<div class="col-xs-6">
+		<h2 class="pull-right">Противник</h2>
+		<div class="col-xs-9">
+			<img id="opponentMoveImg" src="res/empty.svg" alt="" class="img-responsive empty-img pull-left">
+		</div>
+		<div class="col-xs-3">
+			
+		</div>
+	</div>
+</div>

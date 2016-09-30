@@ -1,0 +1,28 @@
+.banner {
+	width: 20%;
+	height: 20%;
+	margin: auto;
+}
+
+.move-img {
+	max-width: 65%;
+}
+
+.move-img:hover {
+	transition: 0.2s;
+	transform: scale(1.05);
+}
+.empty-img {
+	width: 70%;
+	overflow: hidden;
+}
+
+.flipOut {
+	transition: 0.2s;
+	transform: rotateX(90deg);
+}
+
+.flipIn {
+	transition: 0.2s;
+	transform: rotateX(-90deg);
+}
